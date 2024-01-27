@@ -124,7 +124,7 @@ void app_main(void)
 
     printf("Minimum free heap size: %"PRIu32" bytes\n", esp_get_minimum_free_heap_size());
 
-    int cnt = 0;
+    uint32_t cnt = 0;
     while (1) {
         printf("cnt: %d\n", cnt++);
         vTaskDelay(1000 / portTICK_PERIOD_MS);
